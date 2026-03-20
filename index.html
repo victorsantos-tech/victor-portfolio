@@ -6,20 +6,28 @@
 
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #0f172a;
+      font-family: Arial;
+      background: linear-gradient(135deg, #0f172a, #020617);
       color: white;
       text-align: center;
     }
 
     header {
-      padding: 40px;
-      background: #1e293b;
+      padding: 50px 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .foto {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+      margin-bottom: 15px;
     }
 
     h1 {
-      margin: 0;
+      margin: 10px 0;
     }
 
     .container {
@@ -28,18 +36,25 @@
 
     .card {
       background: #1e293b;
-      margin: 15px auto;
+      margin: 20px auto;
       padding: 20px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 600px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      animation: fadeUp 1s ease;
     }
 
     .project {
       background: #0f172a;
       margin-top: 15px;
       padding: 15px;
-      border-radius: 8px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
     }
 
     a {
@@ -47,8 +62,24 @@
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .skills span {
+      display: inline-block;
+      background: #38bdf8;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
@@ -56,40 +87,49 @@
 <body>
 
 <header>
+  <img src="foto.jpg" class="foto">
   <h1>Victor Santos</h1>
   <p>Futuro Desenvolvedor | Engenharia de Software</p>
 </header>
 
 <div class="container">
-  
-  <!-- SOBRE MIM -->
+
   <div class="card">
     <h2>Sobre mim</h2>
     <p>
-      Atualmente atuo na Bosch e curso Engenharia de Software, 
-      com interesse em tecnologia, desenvolvimento e melhoria de processos.
+      Atualmente atuo na Bosch e curso Engenharia de Software, com foco em desenvolvimento,
+      tecnologia e melhoria de processos.
     </p>
   </div>
 
-  <!-- PROJETOS -->
+  <div class="card">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>Lógica de Programação</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>HTML</span>
+    </div>
+  </div>
+
   <div class="card">
     <h2>Projetos</h2>
 
     <div class="project">
       <h3>🔢 Calculadora em Python</h3>
-      <p>Aplicação desenvolvida utilizando lógica de programação para operações matemáticas.</p>
-      <a href="https://github.com/victorsantos-tech">Ver no GitHub</a>
+      <p>Aplicação com operações matemáticas.</p>
+      <a href="https://github.com/victorsantos-tech">Ver projeto</a>
     </div>
 
     <div class="project">
       <h3>🎮 Projeto Valorant</h3>
-      <p>Projeto com foco em lógica de programação e organização de código.</p>
-      <a href="https://github.com/victorsantos-tech">Ver no GitHub</a>
+      <p>Projeto com foco em lógica e organização de código.</p>
+      <a href="https://github.com/victorsantos-tech">Ver projeto</a>
     </div>
 
   </div>
 
-  <!-- CONTATO -->
   <div class="card">
     <h2>Contato</h2>
     <p>
