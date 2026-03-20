@@ -45,6 +45,18 @@
       animation: fadeUp 1s ease;
     }
 
+    .formacao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
     .project {
       background: #0f172a;
       margin-top: 15px;
@@ -111,9 +123,16 @@
   <div class="card">
     <h2>Formação Acadêmica</h2>
 
-    <h3>🎓 Engenharia de Software</h3>
-    <p>Centro Universitário Unimetrocamp</p>
-    <p>Fev/2026 – Dez/2029 (cursando)</p>
+    <div class="formacao">
+      <img src="logo.png" class="logo">
+
+      <div>
+        <h3>🎓 Engenharia de Software</h3>
+        <p>Centro Universitário Unimetrocamp</p>
+        <p>Fev/2026 – Dez/2029 (cursando)</p>
+      </div>
+    </div>
+
   </div>
 
   <!-- HABILIDADES -->
