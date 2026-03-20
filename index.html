@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Victor Santos</title>
+
   <style>
     body {
       font-family: Arial;
@@ -11,25 +12,43 @@
       color: white;
       text-align: center;
     }
+
     header {
       padding: 40px;
       background: #1e293b;
     }
+
     h1 {
       margin: 0;
     }
+
     .container {
       padding: 20px;
     }
+
     .card {
       background: #1e293b;
-      margin: 10px;
+      margin: 15px auto;
       padding: 20px;
       border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
     }
+
+    .project {
+      background: #0f172a;
+      margin-top: 15px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
     a {
       color: #38bdf8;
       text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -43,16 +62,34 @@
 
 <div class="container">
   
+  <!-- SOBRE MIM -->
   <div class="card">
     <h2>Sobre mim</h2>
-    <p>Atualmente atuo na Bosch e estudo Engenharia de Software, com interesse em tecnologia, desenvolvimento e melhoria de processos.</p>
+    <p>
+      Atualmente atuo na Bosch e curso Engenharia de Software, 
+      com interesse em tecnologia, desenvolvimento e melhoria de processos.
+    </p>
   </div>
 
+  <!-- PROJETOS -->
   <div class="card">
     <h2>Projetos</h2>
-    <p>Calculadora em Python</p>
+
+    <div class="project">
+      <h3>🔢 Calculadora em Python</h3>
+      <p>Aplicação desenvolvida utilizando lógica de programação para operações matemáticas.</p>
+      <a href="https://github.com/victorsantos-tech">Ver no GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>🎮 Projeto Valorant</h3>
+      <p>Projeto com foco em lógica de programação e organização de código.</p>
+      <a href="https://github.com/victorsantos-tech">Ver no GitHub</a>
+    </div>
+
   </div>
 
+  <!-- CONTATO -->
   <div class="card">
     <h2>Contato</h2>
     <p>
