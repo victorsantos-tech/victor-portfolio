@@ -24,6 +24,7 @@
       border-radius: 50%;
       border: 3px solid #38bdf8;
       margin-bottom: 15px;
+      object-fit: cover;
     }
 
     h1 {
@@ -49,12 +50,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
+      gap: 20px;
+      text-align: left;
       flex-wrap: wrap;
     }
 
     .logo {
-      width: 100px;
+      width: 120px;
+      height: auto;
+    }
+
+    .texto-formacao {
+      max-width: 400px;
     }
 
     .project {
@@ -103,7 +110,8 @@
 <body>
 
 <header>
-  <img src="logo.webp" class="logo">
+  <!-- SUA FOTO (IMPORTANTE) -->
+  <img src="foto.jpg" class="foto">
   <h1>Victor Santos</h1>
   <p>Futuro Desenvolvedor | Engenharia de Software</p>
 </header>
@@ -124,9 +132,10 @@
     <h2>Formação Acadêmica</h2>
 
     <div class="formacao">
-      <img src="logo.png" class="logo">
+      <!-- LOGO DA FACULDADE -->
+      <img src="unimetrocamp.webp" class="logo">
 
-      <div>
+      <div class="texto-formacao">
         <h3>🎓 Engenharia de Software</h3>
         <p>Centro Universitário Unimetrocamp</p>
         <p>Fev/2026 – Dez/2029 (cursando)</p>
