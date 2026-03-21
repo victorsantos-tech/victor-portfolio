@@ -38,11 +38,11 @@
     .card {
       background: #1e293b;
       margin: 20px auto;
-      padding: 20px;
+      padding: 25px;
       border-radius: 15px;
       width: 90%;
       max-width: 700px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
       animation: fadeUp 1s ease;
     }
 
@@ -50,14 +50,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 20px;
-      text-align: left;
+      gap: 25px;
       flex-wrap: wrap;
+      text-align: left;
     }
 
     .logo {
-      width: 120px;
-      height: auto;
+      width: 130px;
+      background: white;
+      padding: 12px;
+      border-radius: 12px;
     }
 
     .texto-formacao {
@@ -69,7 +71,7 @@
       margin-top: 15px;
       padding: 15px;
       border-radius: 10px;
-      transition: transform 0.3s;
+      transition: 0.3s;
     }
 
     .project:hover {
@@ -79,6 +81,7 @@
     a {
       color: #38bdf8;
       text-decoration: none;
+      font-weight: bold;
     }
 
     a:hover {
@@ -89,10 +92,11 @@
       display: inline-block;
       background: #38bdf8;
       color: black;
-      padding: 5px 10px;
-      border-radius: 5px;
+      padding: 6px 12px;
+      border-radius: 6px;
       margin: 5px;
       font-size: 14px;
+      font-weight: bold;
     }
 
     @keyframes fadeIn {
@@ -110,7 +114,6 @@
 <body>
 
 <header>
-  <!-- SUA FOTO (IMPORTANTE) -->
   <img src="foto.jpg" class="foto">
   <h1>Victor Santos</h1>
   <p>Futuro Desenvolvedor | Engenharia de Software</p>
@@ -118,7 +121,7 @@
 
 <div class="container">
 
-  <!-- SOBRE MIM -->
+  <!-- SOBRE -->
   <div class="card">
     <h2>Sobre mim</h2>
     <p>
@@ -127,13 +130,12 @@
     </p>
   </div>
 
-  <!-- FORMAÇÃO ACADÊMICA -->
+  <!-- FORMAÇÃO -->
   <div class="card">
     <h2>Formação Acadêmica</h2>
 
     <div class="formacao">
-      <!-- LOGO DA FACULDADE -->
-      <img src="unimetrocamp.webp" class="logo">
+      <img src="logo.png" class="logo">
 
       <div class="texto-formacao">
         <h3>🎓 Engenharia de Software</h3>
@@ -144,7 +146,7 @@
 
   </div>
 
-  <!-- HABILIDADES -->
+  <!-- SKILLS -->
   <div class="card">
     <h2>Habilidades</h2>
     <div class="skills">
